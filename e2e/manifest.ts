@@ -108,8 +108,8 @@ export const CASES: readonly Case[] = [
         harness: 'bankfletcher-live.ts',
         covers: { scripts: ['BankFletcher'] },
         status: 'unvetted',
-        budgetMin: 5,
-        note: 'Varrock West: knife stays through a willow longbow bank trip, stringing raises strung id 847, headless attach climbs'
+        budgetMin: 8,
+        note: 'Draynor start banks locally rather than trekking to the Varrock West preset, then Varrock West: knife stays through a willow longbow bank trip, stringing raises strung id 847, headless attach climbs'
     },
     {
         id: 'baxtorian-rope-369-live',
@@ -1097,6 +1097,14 @@ export const CASES: readonly Case[] = [
         harness: 'waterfall-exit-test.ts',
         covers: { subsystems: ['nav', 'quests'] },
         status: 'unvetted'
+    },
+    {
+        id: 'witchs-potion-rats-tail-live',
+        harness: 'witchs-potion-rats-tail-live.ts',
+        covers: { scripts: ['AIOQuester'], subsystems: ['quests'] },
+        status: 'unvetted',
+        budgetMin: 8,
+        note: "seeds Rat's tail on a started Witch's Potion; passes when AIOQuester picks an onion and never attacks a Rimmington rat (#796)"
     },
     {
         id: 'witchs-house-226-live',
